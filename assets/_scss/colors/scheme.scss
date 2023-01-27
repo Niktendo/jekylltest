@@ -13,24 +13,6 @@
   $dark: dark;
   // add light colors
   @extend %#{$name + $light} !optional;
-  @if $dark_scheme_enabled == true {
-    // get parent
-    $_parent: #{&};
-    @if $_parent != ":root" {
-      // if not root, then add parent
-      #{$dark_attr} & {
-        // add dark colors
-        @extend %#{$name + $dark};
-      }
-    } @else {
-      //if root, then don't add parent
-      @at-root #{$dark_attr} {
-        // add dark colors
-        @extend %#{$name + $dark};
-      }
-      //@debug $name;
-    }
-  }
 }
 
 @import "colors/light-colors";
