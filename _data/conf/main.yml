@@ -114,7 +114,7 @@ image_lazy_loader_posts: true
 #                Color scheme switch
 ###########################################################
 # this adds dark color schemes (set to false to disable this feature. This disables all dark styles)
-color_scheme_dark: true
+color_scheme_dark: false
 
 # this sets default color scheme to dark. (color_scheme_dark must be enabled)
 # page start will be dark color scheme. You can change color scheme using switches
